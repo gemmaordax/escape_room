@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Time Traveling Loading</title>
+  <style>
+    /* Set the body to full height and width */
+    body {
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background-color: #212121;
+      /* Dark grey bluish background color */
+    }
+
+    /* Container for the time traveling animation */
+    .loading-container {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Styling for the time traveling animation */
+    .time-travel-animation {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      /* White background color */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+      /* Adding a box shadow for a professional look */
+    }
+
+    /* Styling for the watch face */
+    .watch-face {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #212121;
+      /* Dark grey bluish background color for the watch face */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /* Styling for the watch hour hand */
+    .hour-hand {
+      width: 4px;
+      height: 40px;
+      background-color: #ff9800;
+      /* Orange color for the hour hand */
+      position: absolute;
+      bottom: calc(50% - 2px);
+      left: calc(50% - 2px);
+      transform-origin: bottom center;
+      transform: rotate(0deg);
+      animation: rotate-hour-hand 4s linear infinite;
+    }
+
+    /* Styling for the watch minute hand */
+    .minute-hand {
+      width: 3px;
+      height: 60px;
+      background-color: #ffffff;
+      /* White color for the minute hand */
+      position: absolute;
+      bottom: calc(50% - 2px);
+      left: calc(50% - 1.5px);
+      transform-origin: bottom center;
+      transform: rotate(0deg);
+      animation: rotate-minute-hand 2s linear infinite;
+    }
+
+    /* Styling for the watch second hand */
+    .second-hand {
+      width: 2px;
+      height: 80px;
+      background-color: #ff9800;
+      /* Orange color for the second hand */
+      position: absolute;
+      bottom: calc(50% - 2px);
+      left: calc(50% - 1px);
+      transform-origin: bottom center;
+      transform: rotate(0deg);
+      animation: rotate-second-hand 1s linear infinite;
+    }
+
+    /* Keyframes for rotating the hour hand */
+    @keyframes rotate-hour-hand {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Keyframes for rotating the minute hand */
+    @keyframes rotate-minute-hand {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+
+
+      }
+    }
+
+    /* Keyframes for rotating the second hand */
+    @keyframes rotate-second-hand {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loading-container">
+    <div class="time-travel-animation">
+      <div class="watch-face"></div>
+      <div class="hour-hand"></div>
+      <div class="minute-hand"></div>
+      <div class="second-hand"></div>
+    </div>
+  </div>
+  <script src="../js/gameLoader.js" type="module"></script>
+</body>
+
+</html>
+
+
+
+
+</body>
+
+</html>

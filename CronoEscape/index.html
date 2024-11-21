@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>EscapeRoom Online</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/jpg" href="img/favicon.png" />
+
+
+  <script src="js/botonsfoot.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- header inner -->
+    <div class="header-top">
+      <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand">
+            <img src="img/logo_ioc.png" alt="Logo ESCAPE">
+            CronoEscape: Una aventura a contrarellotge
+          </a>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+
+              <li class="nav-item">
+                <a class="btn nav-link" href="pages/login.html">Login</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- end header inner -->
+        <section class="container mt-5">
+          <div class="banner_main">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-2 padding_left0">
+                  <div class="menu-area">
+                    <div class="limit-box">
+                      <nav class="main-menu">
+                        <ul class="menu-area-main">
+                          <li> <a href="#ranking">Ranking</a> </li>
+
+                          <li> <a href="#about">Requisits</a> </li>
+                          <li> <a href="#contact">Contacte</a> </li>
+
+
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                  <div class="text-bg">
+                    <a class="btn btn-primary" href="pages/register.html">Registre</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+  </header>
+  <!-- ranking  -->
+  <div id="ranking" class="ranking">
+    <div id ="gamesContainer" class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titlepage">
+            <h2>TOP 5: Ranking Global</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="pages/global_ranking.html"><button class="btn btn-primary" id="ranking">Ranking Global</button></a>
+  </div>
+
+  <!-- about  -->
+  <div id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="titlepage">
+            <h2>Qué necessito per jugar?</h2>
+            <h4>Mira el video i sabràs tota la informació important!</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row" text-align="center">
+        <div class="col-md-12">
+          <div class="container">
+
+            <div class="starter-template">
+
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/7tSZBbMJ2uQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- end abouts -->
+
+
+  <!-- contact -->
+  <div id="contact" class="contact">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-12">
+
+          <form class="contact_bg" action="https://formsubmit.co/4755c800ba09656b4587898839b0fdd5" method="POST">
+            <div class="row">
+              <h2>Contacte</h2>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <input class="contactus" placeholder="Nom" type="text" name="nom">
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <input class="contactus" placeholder="Assumpte" type="text" name="assumpte">
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                <input class="contactus" placeholder="Email" type="email" name="email">
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <textarea class="textarea" placeholder="Missatge" type="text" name="misatge"></textarea>
+              </div>
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <button class="send" type="submit">Enviar</button>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container"></div>
+  <div id="popup">
+
+    <button class="btn btn-secondary" id="tancar">X</button>
+    <a href="#" id="imatgeCRONOIOC"><img src="img/cronoioc.png" alt="Logo cronoioc"></a>
+    <h1 class="font-weight-bold" id="titolPopUP"></h1>
+    <p id="descripcio">CronoIOC som una empresa dinàmica i innovadora amb més de 10 anys d'experiència en la
+      realització de sistemes lúdics i ambiciosos per a ajudar als departaments de recursos humans de les
+      empreses a aconseguir que els seus treballadors siguin més proactius i treballin amb més ganes.
+      <br><br>
+      Creiem que el benestar i la motivació dels treballadors són clau per a l'èxit de qualsevol empresa, per això
+      ens dediquem a crear eines innovadores que fomentin la col·laboració, la creativitat i el compromís dels
+      empleats. Ens enorgulleix oferir solucions personalitzades i adaptades a les necessitats de cada client,
+      utilitzant tecnologies avançades i metodologies àgils per a garantir la màxima eficiència i efectivitat.
+      <br><br>
+      El nostre equip altament capacitat i experimentat treballa en estreta col·laboració amb els nostres clients
+      per a comprendre els seus objectius i desafiaments únics, i oferir solucions creatives i efectives que
+      millorin la productivitat de les empreses.
+      <br><br>
+    </p>
+  </div>
+  </div>
+
+  <!-- end contact -->
+  <footer class="bg-light py-3">
+    <div class="container text-center">
+      <p>CRONOIOC SL &copy; 2023</p>
+      <span class="btn" id="boto1" onmouseover="canviColor(this)" onmouseover="resetColor(this)">About Us</span>
+      <span class="btn" id="boto2" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Avís Legal</span>
+      <span class="btn " id="boto3" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Política de
+        privacitat</span>
+      <span class="btn" id="boto4" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Política de
+        cookies</span>
+
+    </div>
+  </footer>
+  <script src="js/getGlobalRanking.js" type="module"></script>
+</body>
+
+
+</html>

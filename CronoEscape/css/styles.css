@@ -1,0 +1,983 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #F8F9FA;
+ 
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar-brand img {
+  height: 90px;
+  /* tamany del logo */
+  margin-right: 10px;
+  /* separació entre el logo i el text */
+}
+
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+/*
+  .main {
+    padding: 50px;
+  }*/
+
+.container h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.container p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #F8F9FA;
+  padding: 20px;
+
+}
+
+footer p {
+  font-size: 16px;
+
+}
+
+
+/* Estils formulario de login */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #CED4DA;
+  border-radius: 5px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #CED4DA;
+  border-radius: 5px;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0069D9;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #0069D9;
+  color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  text-indent: 20px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  text-align: justify;
+  padding-left: 50px;
+}
+
+#popup-titulo {
+  font-size: 24px;
+  margin-top: 0;
+  color: #FFFFFF;
+
+}
+
+#popup-descripcion {
+  margin-top: 0;
+}
+
+#imatgeCRONOIOC img {
+  max-width: 60%;
+  max-height: 40%;
+  display: block;
+  margin: auto;
+}
+
+#tancar {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+
+#tancar2 {
+  position: fixed;
+  top: 10px !important;
+  right: 300px !important;
+}
+
+.btn:hover {
+  background-color: #0069D9;
+	color: #FFFFFF !important;
+  
+  cursor: pointer;
+}
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #666666;
+  font-size: 14px;
+  font-family: 'poppins', sans-serif;
+  line-height: 1.80857;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+a {
+  color: #1f1f1f;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+  font-weight: normal;
+  position: relative;
+  padding: 0 0 10px 0;
+  font-weight: normal;
+  line-height: normal;
+  color: #111111;
+  margin: 0
+}
+
+h1 {
+  font-size: 24px
+}
+
+h2 {
+  font-size: 22px
+}
+
+h3 {
+  font-size: 18px
+}
+
+h4 {
+  font-size: 16px
+}
+
+h5 {
+  font-size: 14px
+}
+
+h6 {
+  font-size: 13px
+}
+.row{
+  text-align: center;
+}
+.ranking{
+  padding-top: 90px;
+}
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: #212121;
+  text-decoration: none !important;
+  opacity: 1
+}
+
+button:focus {
+  outline: none;
+}
+
+ul,
+li,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+p {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+  outline: none !important;
+}
+
+a,
+.btn {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.img-responisve {
+  max-width: 100%;
+  height: auto;
+}
+
+:focus {
+  outline: 0;
+}
+
+
+
+.form-control:focus {
+  border-color: #ffffff !important;
+  box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+  border: none !important;
+}
+
+
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+
+/*--------------------------------------------------------------------- header area ---------------------------------------------------------------------*/
+
+nav.main-menu {
+  float: left;
+  margin-left: 0;
+  margin-left: 0;
+}
+
+.menu-area-main li:hover a,
+.menu-area-main li:focus a {
+  color: #fff;
+  background: #0069D9;
+}
+
+.menu-area-main li.active a {
+  color: #fff;
+  background: #0069D9;
+}
+
+
+.main-menu ul>li nth:child(5) a {
+  padding-right: 0px;
+}
+
+
+
+/*-- end header middle --*/
+
+
+.main-menu {
+  text-align: center;
+}
+
+.main-menu ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+.main-menu ul>li {
+  display: inline-block;
+  position: relative;
+}
+
+.main-menu ul>li a {
+  padding: 11px 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+  display: block;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  padding-left: 70px;
+}
+
+.main-menu ul li:last-child a {
+  padding-right: 0;
+}
+
+
+.main-menu ul li:first-child {
+  margin-left: 0;
+  background: #0069D9;
+}
+
+.main-menu ul>li>ul {
+  opacity: 0;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 0 0 0;
+  transform-origin: 0 0 0;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 240px;
+  z-index: 999;
+  background: #fff;
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.main-menu>ul>li:hover>ul {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+}
+
+.main-menu ul>li>ul>li {
+  margin: 0px;
+  position: relative;
+  display: block;
+}
+
+.main-menu ul>li>ul>li:hover>ul {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+  left: 100%;
+  top: 10px;
+}
+
+.main-menu ul>li>ul>li>a {
+  background: none !important;
+}
+
+
+.main-menu ul>li {
+  position: inherit;
+  display: block;
+  text-align: left;
+
+}
+
+.nav>li {
+  position: inherit;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/*--------------------------------------------------------------------- top banner area ---------------------------------------------------------------------*/
+/*--------------------------------------------------------------------- layout new css ---------------------------------------------------------------------*/
+
+
+.padding_left0 {
+  padding-left: 0px;
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu ul>li a {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.main-menu ul>li a:before,
+.main-menu ul>li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #fff;
+}
+
+.main-menu ul>li a:before {
+  left: -2.5px;
+}
+
+.main-menu ul>li a:after {
+  right: 2.5px;
+  background: #fff;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.main-menu ul>li a:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.main-menu ul>li a:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.header-top {
+  background: url(../img/fondo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
+  min-height: 700px;
+  background-position: right top;
+}
+
+.header {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  
+}
+
+
+.text-bg {
+  padding-top: 345px;
+}
+
+.text-bg h1 {
+  color: #fff;
+  padding-top: 80px;
+  font-size: 90px;
+  line-height: 100px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.text-bg span {
+  font-size: 17px;
+  display: block;
+  color: #fff;
+  line-height: 25px;
+  padding-bottom: 50px;
+}
+
+.text-bg a {
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #0069D9;
+  padding: 10px 40px;
+  display: inline-block;
+}
+
+.text-bg a:hover {
+  background-color: #0069D9;
+  color: #fff;
+}
+
+
+
+/** about section **/
+.about {
+  background-color: #fff;
+  padding-top: 90px;
+}
+
+
+
+/** end about section **/
+/** contact section **/
+.contact {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+
+.contact .titlepage {
+  text-align: center;
+}
+
+.contact .titlepage h3 {
+  text-align: center;
+  padding: 0px 0px 6px 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  line-height: 46px;
+  border-bottom: #fff solid 1px;
+  font-size: 40px;
+  width: 367px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.contact .contact_bg {
+  background: #0069D9;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  padding: 60px;
+}
+
+.contact .contact_bg .contactus {
+  border: #b1b0b0 solid 1px;
+  padding: 12px 19px;
+  margin-bottom: 26px;
+  border-radius: inherit;
+  color: #000;
+  width: 100%;
+}
+
+.contact .contact_bg .textarea {
+  margin-bottom: 25px;
+  padding: 15px 19px;
+  color: #000 !important;
+  width: 100%;
+  height: 170px;
+  border: #b1b0b0 solid 1px;
+  border-radius: inherit;
+}
+
+.contact .contact_bg .send {
+  font-size: 16px;
+  border: #000 solid 1px;
+  background-color: #000;
+  color: #fff;
+  padding: 11px 67px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.contact .contact_bg .send:hover {
+  background-color: #fff;
+  border: #fff solid 1px;
+  color: #0069D9;
+}
+/** end contact section **/
+
+/** Register section **/
+
+
+#login-container{
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  
+}
+#login-container input{
+  margin-bottom: 20px;
+  
+}
+#recaptcha-container{
+  display: inline-block;
+  margin-bottom: 20px;
+ 
+}
+
+#ranking{
+  text-align: center;
+  margin-top: 35px;
+}
+
+#gamesContainer{
+  text-align: center;
+  align-items: center;
+
+}
+/*--------------------------------------------------------------------- ener page css ---------------------------------------------------------------------*/
+
+/* POSITION ELEMENTS ON GAME --------------------------*/
+
+
+
+ /*CSS para el contenedor de la imagen para que ocupe toda la tabla */
+.container-fluid.position-relative {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.bg-img {
+  background-image: url('../img/juego1/fondo_presente.jpg');
+  background-size: cover;
+  width: 800px;
+  height: 566px;
+}
+
+.photo {
+  width: 150px !important;
+  height: 170px !important;
+}
+
+.interruptor {
+  width: 60px !important;
+  height: 60px !important;
+  margin-top: 140px;
+}
+
+.maquina {
+  width: 250px !important;
+  height: 300px !important;
+  margin-top: -79px;
+}
+
+.pc {
+  width: 230px !important;
+  height: 190px !important;
+  margin-top: -60px;
+  margin-left: 90px;
+}
+
+.tablet {
+  width: 45% !important;
+  height: 45% !important;
+  margin-top: 69px;
+  margin-left: -77px;
+}
+
+.container-joc {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  border-collapse: collapse;
+  padding: 5px;
+  box-sizing: border-box;
+  background-color: #eee;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.cell-joc {
+  width: calc(100% / 6);
+  height: calc(100% / 6);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+
+.tablet:hover {
+  content: url('../img/juego1/on/tablet_sel.png'); /* Cambia la ruta de la otra imagen según tu necesidad */
+}
+
+.pc:hover {
+  content: url('../img/juego1/on/pc_sel.png'); /* Cambia la ruta de la otra imagen según tu necesidad */
+}
+#maquinaON:hover {
+  content: url('../img/juego1/on/maquina_on_sel.png'); /* Cambia la ruta de la otra imagen según tu necesidad */
+}
+
+#maquinaOFF:hover {
+  content: url('../img/juego1/on/maquina_off_sel.png'); /* Cambia la ruta de la otra imagen según tu necesidad */
+}
+
+#llumActivada:hover {
+  content: url('../img/juego1/on/interruptor_sel.png'); /* Cambia la ruta de la otra imagen según tu necesidad */
+}
+
+.photo:hover {
+  content: url('../img/juego1/on/polaroid_sel.png'); /* Cambia la ruta de la otra imagen según tu necesidad */
+}
+
+.warning-message {
+  display: none; /* ocultem missatge per defecte */
+  text-align: center;
+ 
+ 
+}
+
+
+/* Imatges de joc2 ->joc1.html */
+.maquina2 {
+  width: 150px !important;
+  height: 200px !important;
+  margin-top: -50px;
+}
+
+.pc2 {
+  width: 170px !important;
+  height: 140px !important;
+  margin-top: -170px;
+  margin-left: 60px;
+}
+.pacman {
+  width: 190px !important;
+  margin-top: -270px;
+  margin-left: 30px;
+}
+.moneda {
+  width: 20px !important;
+  margin-top: 380px;
+  margin-left: -150px;
+}
+.radio {
+  width: 130px !important;
+  margin-top: 220px;
+  margin-left: -130px;
+}
+
+
+.pc2:hover {
+  content: url('../img/juego2/pc_sel.png'); /* Cambia la ruta de la otra imagen según tu necesidad */
+}
+.radio:hover {
+  content: url('../img/juego2/radio_sel.png'); /* Cambia la ruta de la otra imagen según tu necesidad */
+}
+.pacman:hover {
+  content: url('../img/juego2/arcade_sel.png'); /* Cambia la ruta de la otra imagen según tu necesidad */
+}
+
+
+/* Imatges de joc3 ->joc2.html */
+
+.pc3 {
+  width: 230px !important;
+  height: 190px !important;
+  margin-top: 180px;
+  margin-left: 70px;
+}
+
+.pc3:hover {
+  content: url('../img/juego3/pc_sel.png'); 
+}
+
+.movil {
+  width: 30% !important;
+  height: 10% !important;
+  margin-top: 320px;
+  margin-left: -40px;
+}
+
+.movil:hover {
+  content: url('../img/juego3/HoloPhone_Hover.png'); 
+}
+
+.qr {
+  width: 30% !important;
+  height: 30% !important;
+  opacity: 50%;
+  margin-top: 190px;
+  margin-left: -130px;
+}
+
+.maquina3 {
+  width: 210px !important;
+  height: 270px !important;
+  margin-top: -105px;
+  margin-left: 20px;
+}
+
+.ruleta {
+  width: 15% ;
+  height: 22% ;
+  opacity: 100%;
+  margin-top: 50px;
+  margin-left: -50px;
+}
+
+.ruleta:hover {
+  content: url('../img/juego3/ruleta_sel.png'); 
+}
+
+
+/* Mostrem missatge si la resolucio es menor a 1000px */
+@media screen and (max-width: 1000px) {
+  .warning-message {
+    display: block; 
+    text-align: center;
+
+   
+  }
+  .zona-joc {
+    display: none;
+  }
+  
+}
+
+
+.hidden-image {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+
+}
+
+.game-container{
+display:flex  !important;
+flex-direction: column !important;
+align-items: center !important;
+justify-content: center !important;
+min-height: 100vh !important;
+
+}
+
+
+
+/**-------------Pàgina perfil usuari ----------------- **/
+
+/** Text jugar **/
+
+#volsjugar {
+  color: white;
+  font-weight: bold;
+}
+
+/**-------------Pàgina final ----------------- **/
+
+#textJoc3  {
+  color: white;
+  font-weight: bold;
+}
+
+
+#tempsJugat  {
+  color: white;
+}
+
+#enhorabona  {
+  color: #5495ff;
+  font-weight: bold;
+  font-size: xx-large;
+  
+}
+
+#final-perfil, #final-Ranking {
+  background-color: #5495ff;
+  color: #ffffff;
+}
+
+#final-perfil:hover, #final-Ranking:hover {
+  background-color: #ffffff;
+	color: #0069D9 !important;
+  cursor:pointer;
+}
+
+
+/** ESTIL TAULA RANKING**/
+.table {
+
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-collapse: collapse;
+  width: 30%;
+  text-align: center;
+
+
+}
+
+.table th {
+  background-color: #5495ff;
+  font-size: 18px;
+  color: #ffff;
+}
+
+
+
+.table tbody tr:hover td,
+.table tbody tr:hover {
+  background-color: #3b3c3d;
+  color: #ffff;
+}
+
+
+.table td:first-child,
+.table th:first-child {
+  border-left: none;
+
+}
+
+.table td:last-child,
+.table th:last-child {
+  border-right: none;
+}
+
+
+/*-----------------------------------------------------*/

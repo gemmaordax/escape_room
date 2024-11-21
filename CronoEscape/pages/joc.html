@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>EscapeRoom Online</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="../img/favicon.png" />
+
+  
+  <script src="../js/botonsfoot2.js";></script>
+  <script src="../js/joc1.js";></script>
+  <script src="../js/popups_joc.js";></script>
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">
+          <img src="../img/logo_ioc.png" alt="Logo ESCAPE">
+          CronoEscape: Una aventura a contrarellotge</a>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a class="btn nav-link" href="../pages/register.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="warning-message"><h3 style="color:crimson"><br><br>La mida de la finestra no permet jugar, <br>si us plau amplia la mida de la finestra.</h3><br><br></div>
+      <section class="zona-joc container mt-5">
+        <div class="game-container ">
+        <!-- carrega de fons de joc amb la class bg-img -->
+        <div style="background-image: url('../img/juego1/fondo_presente.jpg'); background-size: cover; width: 800px; height: 566px;" id="bgImgContainer">
+          
+           <!-- pre-carrega de imatges en ocult -->
+          <img src="../img/juego1/on/tablet_sel.png" class="hidden-image">
+          <img src="../img/juego1/on/pc_sel.png" class="hidden-image">
+          <img src="../img/juego1/on/maquina_on_sel.png" class="hidden-image">
+          <img src="../img/juego1/on/maquina_off_sel.png" class="hidden-image">
+          <img src="../img/juego1/on/polaroid_sel.png" class="hidden-image">
+          <img src="../img/juego1/on/interruptor_sel.png" class="hidden-image">
+          <img src="../img/juego1/fondo_presente_off.jpg" class="hidden-image">
+          
+           <!-- pre-carrega de imatges en color blau en ocult -->
+          <img src="../img/juego1/off/tablet.png" class="hidden-image">
+          <img src="../img/juego1/off/pc.png" class="hidden-image">
+          <img src="../img/juego1/off/polaroid.png" class="hidden-image">
+          <img src="../img/juego1/off/interruptor.png" class="hidden-image">
+
+          <!-- carrega elements joc -->
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <!-- Contenido de la columna 1 -->
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <!-- Contenido de la columna 2-->
+            </div>
+            <div class="col-lg-4 col-md-12"> 
+              <!-- Contenido de la columna 3 -->
+              <img src="../img/juego1/on/polaroid.png" onclick="PopUpPhoto()" class="photo">
+              <img src="../img/juego1/on/interruptor.png" class="interruptor" onclick="comprovaLlum()">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <!--Contenido de la columna 4-->
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <img src="../img/juego1/on/pc.png" onclick="PopUpPC()" class="pc">
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <img src="../img/juego1/on/tablet.png" onclick="PopUpTablet()" class="tablet">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <img src="../img/juego1/on/maquina_on.png" id="maquinaON" class="maquina" onclick="cambiarImatge()">
+            </div>
+            <div class="col-lg-4 col-md-6">
+            </div>
+            <div class="col-lg-4 col-md-12">
+               <!--Contenido de la columna 9 -->
+            </div>
+          </div>
+
+          <audio id="so">
+            <source src="../audio/so-maquina.mp3" type="audio/mp3">
+          </audio>
+
+          <audio id="so-interruptor">
+            <source src="../audio/so-interruptor.mp3" type="audio/mp3">
+          </audio>
+          
+          <!--Div contenedor de PopUps -->
+          <div class="PopUps"></div>
+
+        </div>
+
+        </div>
+        
+<script>
+        // obtenemos el elemento del mensaje de advertencia
+        var warningMessage = document.getElementById("warning-message");
+        
+        // verificamos si la resolución es menor a 1000px y mostramos el mensaje de advertencia
+        if (window.matchMedia("(max-width: 1000px)").matches) {
+          warningMessage.style.display = "block";
+        }
+</script>
+
+      </section>
+    </main>
+    <div class="container"></div>
+    <div id="popup">
+  
+      <button class="btn btn-secondary" id="tancar">X</button>
+      <a href="#" id="imatgeCRONOIOC"><img src="../img/cronoioc.png" alt="Logo cronoioc"></a>
+      <h1 class="font-weight-bold" id="titolPopUP"></h1>
+      <p id="descripcio">CronoIOC som una empresa dinàmica i innovadora amb més de 10 anys d'experiència en la
+        realització de sistemes lúdics i ambiciosos per a ajudar als departaments de recursos humans de les
+        empreses a aconseguir que els seus treballadors siguin més proactius i treballin amb més ganes.
+        <br><br>
+        Creiem que el benestar i la motivació dels treballadors són clau per a l'èxit de qualsevol empresa, per això
+        ens dediquem a crear eines innovadores que fomentin la col·laboració, la creativitat i el compromís dels
+        empleats. Ens enorgulleix oferir solucions personalitzades i adaptades a les necessitats de cada client,
+        utilitzant tecnologies avançades i metodologies àgils per a garantir la màxima eficiència i efectivitat.
+        <br><br>
+        El nostre equip altament capacitat i experimentat treballa en estreta col·laboració amb els nostres clients
+        per a comprendre els seus objectius i desafiaments únics, i oferir solucions creatives i efectives que
+        millorin la productivitat de les empreses.
+        <br><br>
+      </p>
+    </div>
+    </div>
+  
+    <!-- end contact -->
+    <footer class="bg-light py-3">
+      <div class="container text-center">
+        <p>CRONOIOC SL &copy; 2023</p>
+        <span class="btn" id="boto1" onmouseover="canviColor(this)" onmouseover="resetColor(this)">About Us</span>
+        <span class="btn" id="boto2" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Avís Legal</span>
+        <span class="btn " id="boto3" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Política de
+          privacitat</span>
+        <span class="btn" id="boto4" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Política de
+          cookies</span>
+  
+      </div>
+    </footer>
+    <script src="../js/auth_logged.js" type="module"></script>
+  </body>
+  
+  </html>

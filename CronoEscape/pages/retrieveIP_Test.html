@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <title>Test api fetch</title>
+</head>
+
+<body>
+  Esta pagina captura tu ip y la muestra en console log, con ella podríamos hacer que, aunque haya registros con
+  distintos teléfonos, se vinculen los rankings por IP.
+  <script>
+
+    // Get IP
+    console.log(getUserIP());
+
+
+    function getUserIP() {
+    var httpRequest = new XMLHttpRequest();
+    httpRequest.open('GET', 'https://api.ipify.org?format=json', false);
+    httpRequest.send();
+    if (httpRequest.status === 200) {
+        return JSON.parse(httpRequest.responseText).ip;
+    }
+}
+
+
+
+  </script>
+</body>
+
+</html>

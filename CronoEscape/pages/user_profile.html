@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Perfil Usuari</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/jpg" href="../img/favicon.png" />
+
+  <script src="../js/botonsfoot2.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- header inner -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand">
+        <img src="../img/logo_ioc.png" alt="Logo ESCAPE">
+        CronoEscape: Una aventura a contrarellotge</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="btn nav-link" href="../index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+
+        <div class="card-header d-flex justify-content-between">
+          <h2>Hola <span id="userName-container"></span>!</h2>
+          <button id="logout-button" class="btn btn-primary ml-auto">Log-out</button>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 text-center flex-row">
+            <br>
+          </div>
+          <div class="col-md-12">
+            <img src="" class="rounded-circle img-fluid" id="imatge-avatar" alt="avatar" width="12%" height="12%">
+            <br>
+            <ul class="list-unstyled">
+              <i class="fas fa-user"></i> Usuari desde: <span id="userCreationDate"></span><br>
+              <i class="fas fa-envelope"></i> Email: <span id="userEmailText"></span><br>
+              <i class="fas fa-gamepad"></i> Has jugat a <span id="games-played"></span> partides.
+            </ul>
+          </div>
+        </div>
+    
+        <div id="bloc-jugar" class="card-header d-flex justify-content-between" style="background-color: #5495ff;">
+          <div id="volsjugar" style="text-align: left;">Vols jugar o continuar la teva partida?</div>
+          <button id="game-start" class="btn btn-success">Jugar</button>
+        </div><br>
+        <div id="gamesContainer">
+          <div id="own-ranking" class="container">
+            <div class="col-md-12">
+              <div class="titlepage">
+                <h2>Ranking Personal</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container"></div>
+    <div id="popup">
+
+      <button class="btn btn-secondary" id="tancar">X</button>
+      <a href="#" id="imatgeCRONOIOC"><img src="../img/cronoioc.png" alt="Logo cronoioc"></a>
+      <h1 class="font-weight-bold" id="titolPopUP"></h1>
+      <p id="descripcio">CronoIOC som una empresa dinàmica i innovadora amb més de 10 anys d'experiència en la
+        realització de sistemes lúdics i ambiciosos per a ajudar als departaments de recursos humans de les
+        empreses a aconseguir que els seus treballadors siguin més proactius i treballin amb més ganes.
+        <br><br>
+        Creiem que el benestar i la motivació dels treballadors són clau per a l'èxit de qualsevol empresa, per això
+        ens dediquem a crear eines innovadores que fomentin la col·laboració, la creativitat i el compromís dels
+        empleats. Ens enorgulleix oferir solucions personalitzades i adaptades a les necessitats de cada client,
+        utilitzant tecnologies avançades i metodologies àgils per a garantir la màxima eficiència i efectivitat.
+        <br><br>
+        El nostre equip altament capacitat i experimentat treballa en estreta col·laboració amb els nostres clients
+        per a comprendre els seus objectius i desafiaments únics, i oferir solucions creatives i efectives que
+        millorin la productivitat de les empreses.
+        <br><br>
+      </p>
+    </div>
+  </div>
+
+  <footer class="bg-light py-3">
+    <div class="container text-center">
+      <p>CRONOIOC SL &copy; 2023</p>
+      <span class="btn" id="boto1" onmouseover="canviColor(this)" onmouseover="resetColor(this)">About Us</span>
+      <span class="btn" id="boto2" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Avís Legal</span>
+      <span class="btn " id="boto3" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Política de
+        privacitat</span>
+      <span class="btn" id="boto4" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Política de
+        cookies</span>
+
+    </div>
+  </footer>
+
+  <hr>
+  <script type="module" src="../js/auth_logged.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+{
+  "emails": {
+    "0000000": "donotdelete",
+    "danidanicom": {
+      "email": true
+    },
+    "gemmahotmailcom": {
+      "email": true
+    },
+    "sergiomecom": {
+      "email": true
+    },
+    "testtestcom": {
+      "email": true
+    }
+  },
+  "games": {
+    "000000000": "donotdelete",
+    "0ZEsbNwkimdtSasw0XL6sy4GxQK2": {
+      "checkpoint": 999,
+      "duracion": "01:21:21",
+      "fechaFin": "testF",
+      "fechaInicio": "testI",
+      "gameid": 1,
+      "userName": "gemma",
+      "user_ip": "91.243.159.87",
+      "useruid": "0ZEsbNwkimdtSasw0XL6sy4GxQK2"
+    },
+    "2Nb7V5uJKAUQiqyqpBm14n0qCTU2": {
+      "checkpoint": 999,
+      "duracion": "01:15:21",
+      "fechaFin": "testF",
+      "fechaInicio": "testI",
+      "gameid": 1,
+      "userName": "sergio",
+      "user_ip": "137.101.23.176",
+      "useruid": "2Nb7V5uJKAUQiqyqpBm14n0qCTU2"
+    },
+    "idusuariogame001": {
+      "checkpoint": 999,
+      "duracion": "02:00:01",
+      "fechaFin": "testF",
+      "fechaInicio": "testI",
+      "gameid": 1,
+      "userName": "dani2",
+      "user_ip": "95.21.226.194",
+      "useruid": "daniOld"
+    },
+    "idusuariogame002": {
+      "checkpoint": 999,
+      "duracion": "01:00:21",
+      "fechaFin": "testF",
+      "fechaInicio": "testI",
+      "gameid": 2,
+      "userName": "test",
+      "user_ip": "95.21.226.194",
+      "useruid": "idusuariogame002"
+    },
+    "jjj": {
+      "checkpoint": 999,
+      "duracion": "01:15:01",
+      "fechaFin": "testF",
+      "fechaInicio": "testI",
+      "gameid": 1,
+      "userName": "jordi",
+      "user_ip": "1212",
+      "useruid": "jjj"
+    },
+    "nuevousuariogame001": {
+      "checkpoint": 999,
+      "duracion": "01:11:01",
+      "fechaFin": "testF",
+      "fechaInicio": "testI",
+      "gameid": 1,
+      "userName": "Liebre",
+      "user_ip": "96.21.226.194",
+      "useruid": "nuevousuario"
+    },
+    "tortugaid": {
+      "checkpoint": 999,
+      "duracion": "01:15:21",
+      "fechaFin": "testF",
+      "fechaInicio": "testI",
+      "gameid": 1,
+      "userName": "tortuga",
+      "user_ip": "123123123",
+      "useruid": "tortugaid"
+    },
+    "useridgame001": {
+      "checkpoint": 999,
+      "duracion": "01:50:01",
+      "fechaFin": "testF",
+      "fechaInicio": "testI",
+      "gameid": 1,
+      "userName": "dani",
+      "user_ip": "96.21.226.194",
+      "useruid": "45alYFxrOYMXCBpSeTp9cxbIHnS2"
+    }
+  },
+  "ips": {
+    "000000000": "donotdelete",
+    "13710123176": {
+      "ip": "137.101.23.176",
+      "user_id": "frAq7KAk7RcsJloJNVw7dmdmmde2"
+    },
+    "21319511274": {
+      "ip": "213.195.112.74",
+      "user_id": "45alYFxrOYMXCBpSeTp9cxbIHnS2"
+    },
+    "9124315987": {
+      "ip": "91.243.159.87",
+      "user_id": "0ZEsbNwkimdtSasw0XL6sy4GxQK2"
+    }
+  },
+  "phones": {
+    "600078174": {
+      "phone": true
+    },
+    "626500466": {
+      "phone": true
+    },
+    "660609945": {
+      "phone": true
+    },
+    "669669669": {
+      "phone": true
+    },
+    "678034972": {
+      "phone": true
+    },
+    "000000000": "donotdelete"
+  },
+  "users": {
+    "0ZEsbNwkimdtSasw0XL6sy4GxQK2": {
+      "dateOfCreation": "24/3/2023, 21:22:38",
+      "email": "gemma@hotmail.com",
+      "last_login": "2023-03-24T20:22:44.945Z",
+      "oldUserUID": "null",
+      "phone": "626500466",
+      "userName": "gemma",
+      "user_IP": "91.243.159.87"
+    },
+    "2Nb7V5uJKAUQiqyqpBm14n0qCTU2": {
+      "dateOfCreation": "27/3/2023 13:59:04",
+      "email": "sergio@me.com",
+      "last_login": "2023-03-29T11:36:45.887Z",
+      "oldUserUID": "null",
+      "phone": "678034972",
+      "userName": "sergio",
+      "user_IP": "137.101.23.176"
+    },
+    "45alYFxrOYMXCBpSeTp9cxbIHnS2": {
+      "dateOfCreation": "28/3/2023, 22:30:30",
+      "email": "dani@dani.com",
+      "last_login": "2023-04-03T10:55:47.155Z",
+      "oldUserUID": "daniOld",
+      "phone": "600078174",
+      "userName": "dani",
+      "user_IP": "213.195.112.74"
+    },
+    "donotdelete": "donotdelete",
+    "frAq7KAk7RcsJloJNVw7dmdmmde2": {
+      "dateOfCreation": "27/3/2023 14:12:45",
+      "email": "test@test.com",
+      "last_login": "2023-04-03T10:23:25.778Z",
+      "oldUserUID": "2Nb7V5uJKAUQiqyqpBm14n0qCTU2",
+      "phone": "660609945",
+      "userName": "test",
+      "user_IP": "137.101.23.176"
+    }
+  }
+}

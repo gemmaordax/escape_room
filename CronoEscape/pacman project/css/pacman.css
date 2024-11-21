@@ -1,0 +1,194 @@
+body {
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    border: #f700ff 2px solid;
+    margin: 5px;
+}
+
+.grid {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    gap: 0px;
+    height: fit-content;
+    width: fit-content;
+    border-color: blue;
+    border-width: 3px;
+    border-style: double;
+
+}
+
+.chomped {
+    background-color: rgb(250, 253, 63);
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    height: fit-content;
+    width: fit-content;
+    gap: 0px;
+
+
+
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px;
+    border-color: rgba(31, 31, 31, 0.5);
+    border-width: 1px;
+    border-style: dotted;
+    min-height: 5vh;
+    min-width: 5vh;
+    max-width: 5vh;
+    max-height: 5vh;
+    color: white;
+
+}
+
+
+.obstacle,
+.porta,
+.tancada,
+.tancada2 {
+    border-radius: 10%;
+    border-color: blue;
+    border-width: 2px;
+    border-style: double;
+}
+
+.porta {
+    background-color: #f700ff;
+}
+
+/*the img with id "pacman" cant be bigger than the cell*/
+#pacman {
+
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 20;
+}
+
+
+#coordenadas {
+    visibility: visible;
+}
+
+.tancada {
+    transform: rotate(45deg);
+}
+
+.tancada2 {
+    transform: rotate(-45deg);
+}
+
+
+
+
+.innerChomp {
+    background-color: rgb(0, 19, 6);
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+    
+    gap: 0px;
+    width: 87vh;
+    color: greenyellow;
+    padding: 2px;
+}
+
+.year{
+    margin: 3px;
+}
+
+
+@media screen and (max-width: 510px) {
+    .objective {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-height: 620px) {
+    .objective {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.objective {
+    width: 5vh;
+    height: 5vh;
+    font-size: 1fr;
+    border-radius: 50%;
+    background-color: #FCD116;
+    box-shadow: 1px 3px 0 #9c9207;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 4s linear infinite;
+    transform-origin: center center;
+    color: #a18401
+}
+
+
+
+
+@keyframes rotate {
+    0% {
+      transform: scaleX(1);
+    }
+    10% {
+        transform: scaleX(1);
+      }
+    20% {
+      transform: scaleX(-1);
+    }
+    30% {
+        transform: scaleX(1);
+      }
+    100% {
+      transform: scaleX(1);
+    }
+  }
+

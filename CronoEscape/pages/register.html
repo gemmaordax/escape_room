@@ -1,0 +1,87 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/jpg" href="../img/favicon.png" />
+
+      <script src="../js/botonsfoot2.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- header inner -->
+  
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand">
+          <img src="../img/logo_ioc.png" alt="Logo ESCAPE">
+          CronoEscape: Una aventura a contrarellotge</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="btn nav-link" href="../index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+   
+    <div id="login-container">
+      <h3>Crear una compte</h3>
+        Nom d'usuari:
+        <input type="text" id="userName" placeholder="Nickname">
+        <br>
+        Email:
+        <input type="text" id="email" placeholder="example@domain.com">
+        <br>
+        Contrasenya:
+        <input type="password" id="password" placeholder="********">
+        <br>
+        Confirma:
+        <input type="password" id="repeatPassword" placeholder="********">
+        <br>
+    Telèfon:
+    <input type="text" id="number" placeholder="699999999"><br>
+    <div id="recaptcha-container"></div>
+    <h3>Entra el codi de verificació</h3>
+
+      <!--div style with red font-->
+      <div id="missatgeError" style="color:red;"></div>
+      <button class="btn btn-primary" type="button" id="sendCode">Envia el codi SMS</button>
+      <br>
+      <h1>Introdueix el codi rebut</h1>
+
+      <input type="text" id="verificationCode" placeholder="Enter verification code">
+      <button class="btn btn-primary" type="button" id="verifyCode"> Verificar codi</button><br>
+      <span class="usuari"> Ja ets usuari? <a href="../pages/login.html">Login</a></span> 
+    </div>
+  
+  
+
+
+
+
+    <footer class="bg-light py-3">
+      <div class="container text-center">
+        <p>CRONOIOC SL &copy; 2023</p>
+        <span class="btn" id="boto1" onmouseover="canviColor(this)" onmouseover="resetColor(this)">About Us</span>
+        <span class="btn" id="boto2" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Avís Legal</span>
+        <span class="btn " id="boto3" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Política de
+          privacitat</span>
+        <span class="btn" id="boto4" onmouseover="canviColor(this)" onmouseover="resetColor(this)">Política de
+          cookies</span>
+  
+      </div>
+    </footer>
+
+    <script src="../js/auth_register.js" type="module"></script>
+    
+
+  </body>
+  
+  </html>
