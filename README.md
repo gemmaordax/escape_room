@@ -13,4 +13,5 @@ Este ejercicio pone en práctica habilidades como:
 
 Es un ejemplo sencillo pero completo de cómo desarrollar una aplicación web básica con elementos dinámicos y visuales.
 
-LINK LIVE DEMO: gemmaordax.github.io/escape_room
+[Live Demo](https://gemmaordax.github.io/escape_room)
+
