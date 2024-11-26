@@ -1,6 +1,5 @@
 # Escape_Room
 
-Descripción del Proyecto:
 Este proyecto es un ejercicio práctico diseñado para aplicar herramientas básicas de diseño web, desarrollo frontend y bases de datos. Su objetivo es reforzar conocimientos fundamentales en programación y diseño.
 
 El proyecto consiste en una plataforma en la que los usuarios deben registrarse para acceder al juego. Una vez registrados, pueden participar en el juego interactivo, que combina elementos de lógica y entretenimiento.
